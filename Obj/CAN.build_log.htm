@@ -1,0 +1,161 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ¦ÌVision V5.36.0.0
+Copyright (C) 2021 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: xu Hunter, c, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.36.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 7 (build 960)
+Assembler:       Armasm.exe V5.06 update 7 (build 960)
+Linker/Locator:  ArmLink.exe V5.06 update 7 (build 960)
+Library Manager: ArmAr.exe V5.06 update 7 (build 960)
+Hex Converter:   FromElf.exe V5.06 update 7 (build 960)
+CPU DLL:         SARMCM3.DLL V5.36.0.0
+Dialog DLL:      DCM.DLL V1.17.3.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.9.0
+Dialog DLL:      TCM.DLL V1.53.0.0
+ 
+<h2>Project:</h2>
+D:\cmd_chain-laser\CAN.uvprojx
+Project File Date:  05/02/2022
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 7 (build 960)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+Build target 'CAN'
+compiling main.c...
+Source\App\main.c(203): warning:  #940-D: missing return statement at end of non-void function "CanTxData" 
+  }
+Source\App\main.c(171): warning:  #177-D: variable "RxMessage"  was declared but never referenced
+    CanRxMsg RxMessage;
+Source\App\main.c(243): warning:  #223-D: function "uart1_send_str" declared implicitly
+  			      uart1_send_str(message);
+Source\App\main.c(259): warning:  #940-D: missing return statement at end of non-void function "Can_send_Data" 
+  }
+Source\App\main.c(208): warning:  #177-D: variable "RxMessage"  was declared but never referenced
+    CanRxMsg RxMessage;
+Source\App\main.c(317): warning:  #188-D: enumerated type mixed with another type
+  			   TestRx=Can_send_Data(0x12800000+my_addr,my_bcl_data,8);   
+Source\App\main.c(332): warning:  #223-D: function "uart1_send_str" declared implicitly
+  			 uart1_send_str(message);
+Source\App\main.c(309): warning:  #177-D: variable "i"  was declared but never referenced
+  int i=0;
+Source\App\main.c(391): warning:  #177-D: variable "TransmitMailbox"  was declared but never referenced
+    u8 TransmitMailbox;
+Source\App\main.c(455): warning:  #177-D: variable "TxMessage"  was declared but never referenced
+    CanTxMsg TxMessage;
+Source\App\main.c(456): warning:  #177-D: variable "i"  was declared but never referenced
+    u32 i = 0;
+Source\App\main.c(543): warning:  #223-D: function "strlen" declared implicitly
+  	   cmp_len=strlen(message)-1;
+Source\App\main.c(556): warning:  #223-D: function "uart1_send_str" declared implicitly
+          uart1_send_str(message);
+Source\App\main.c(561): warning:  #223-D: function "uart2_send_str" declared implicitly
+          uart2_send_str(message);
+Source\App\main.c(573): warning:  #223-D: function "UART2_WriteByte" declared implicitly
+  			  UART2_WriteByte(uart_rec_buffer[i]);
+Source\App\main.c(610): warning:  #223-D: function "uart1_send_str" declared implicitly
+            uart1_send_str(message);
+Source\App\main.c(614): warning:  #186-D: pointless comparison of unsigned integer with zero
+  			if(temp_int1>=0&&temp_int1<=7)
+Source\App\main.c(624): warning:  #223-D: function "uart1_send_str" declared implicitly
+            uart1_send_str(message);
+Source\App\main.c(653): warning:  #223-D: function "uart1_send_str" declared implicitly
+          uart1_send_str(message);
+Source\App\main.c(687): warning:  #223-D: function "uart1_send_str" declared implicitly
+          uart1_send_str(message);
+Source\App\main.c(709): warning:  #223-D: function "uart1_send_str" declared implicitly
+          uart1_send_str(message);
+Source\App\main.c(538): warning:  #177-D: variable "check"  was declared but never referenced
+  	unsigned char cmp_len,i,check,cmd_buf[30];
+Source\App\main.c(538): warning:  #177-D: variable "cmd_buf"  was declared but never referenced
+  	unsigned char cmp_len,i,check,cmd_buf[30];
+Source\App\main.c(539): warning:  #177-D: variable "plc_addr"  was declared but never referenced
+  	unsigned	int plc_addr,plc_val,temp_int1,temp_int2;
+Source\App\main.c(539): warning:  #177-D: variable "plc_val"  was declared but never referenced
+  	unsigned	int plc_addr,plc_val,temp_int1,temp_int2;
+Source\App\main.c(540): warning:  #177-D: variable "ch_num"  was declared but never referenced
+  	u8 ch_num,set_num;
+Source\App\main.c(540): warning:  #177-D: variable "set_num"  was declared but never referenced
+  	u8 ch_num,set_num;
+Source\App\main.c(730): warning:  #223-D: function "strlen" declared implicitly
+  	  cmp_len=strlen(message)-1;
+Source\App\main.c(740): warning:  #223-D: function "uart1_send_str" declared implicitly
+   			      uart1_send_str(message);
+Source\App\main.c(725): warning:  #177-D: variable "check"  was declared but never referenced
+  	unsigned char cmp_len,i,check,cmd_buf[30];
+Source\App\main.c(725): warning:  #177-D: variable "cmd_buf"  was declared but never referenced
+  	unsigned char cmp_len,i,check,cmd_buf[30];
+Source\App\main.c(726): warning:  #177-D: variable "plc_addr"  was declared but never referenced
+  	unsigned	int plc_addr,plc_val,temp_int1,temp_int2;
+Source\App\main.c(726): warning:  #177-D: variable "plc_val"  was declared but never referenced
+  	unsigned	int plc_addr,plc_val,temp_int1,temp_int2;
+Source\App\main.c(726): warning:  #177-D: variable "temp_int1"  was declared but never referenced
+  	unsigned	int plc_addr,plc_val,temp_int1,temp_int2;
+Source\App\main.c(726): warning:  #177-D: variable "temp_int2"  was declared but never referenced
+  	unsigned	int plc_addr,plc_val,temp_int1,temp_int2;
+Source\App\main.c(727): warning:  #177-D: variable "ch_num"  was declared but never referenced
+  	u8 ch_num,set_num;
+Source\App\main.c(727): warning:  #177-D: variable "set_num"  was declared but never referenced
+  	u8 ch_num,set_num;
+Source\App\main.c(771): warning:  #223-D: function "UART2_Config" declared implicitly
+    UART2_Config(115200);
+Source\App\main.c(777): warning:  #223-D: function "LED_GPIO_Config" declared implicitly
+  	LED_GPIO_Config();
+Source\App\main.c(786): warning:  #223-D: function "para_setting" declared implicitly
+  	  para_setting();
+Source\App\main.c(817): warning:  #223-D: function "uart1_send_str" declared implicitly
+  					uart1_send_str(message);
+Source\App\main.c(871): warning:  #1-D: last line of file ends without a newline
+  }
+Source\App\main.c(759): warning:  #177-D: variable "i"  was declared but never referenced
+  	unsigned char i,data[10],can_data_n_send,can_tx_data[10];
+Source\App\main.c(759): warning:  #177-D: variable "data"  was declared but never referenced
+  	unsigned char i,data[10],can_data_n_send,can_tx_data[10];
+Source\App\main.c(759): warning:  #177-D: variable "can_data_n_send"  was declared but never referenced
+  	unsigned char i,data[10],can_data_n_send,can_tx_data[10];
+Source\App\main.c(759): warning:  #177-D: variable "can_tx_data"  was declared but never referenced
+  	unsigned char i,data[10],can_data_n_send,can_tx_data[10];
+Source\App\main.c(760): warning:  #177-D: variable "data_id"  was declared but never referenced
+  	unsigned int data_id,main_cnt;
+Source\App\main.c(761): warning:  #177-D: variable "bms_step"  was declared but never referenced
+  	unsigned char bms_step=0;
+Source\App\main.c(762): warning:  #177-D: variable "max_chager_voletage"  was declared but never referenced
+  	float max_chager_voletage=0;
+Source\App\main.c(763): warning:  #177-D: variable "min_chager_voletage"  was declared but never referenced
+  	float min_chager_voletage=0;
+Source\App\main.c(764): warning:  #177-D: variable "max_chager_current"  was declared but never referenced
+  	float max_chager_current=0;
+Source\App\main.c(765): warning:  #177-D: variable "ccs_cnt"  was declared but never referenced
+  	unsigned char ccs_cnt=0;
+Source\App\main.c(766): warning:  #177-D: variable "para_set"  was declared but never referenced
+  	int para_set=0;
+Source\App\main.c(767): warning:  #177-D: variable "scan_ads_1256_index"  was declared but never referenced
+  	int scan_ads_1256_index=0;
+Source\App\main.c(768): warning:  #177-D: variable "v_cnt"  was declared but never referenced
+  	int v_cnt=0;
+Source\App\main.c: 55 warnings, 0 errors
+linking...
+Program Size: Code=20212 RO-data=552 RW-data=1256 ZI-data=3928  
+FromELF: creating hex file...
+".\Obj\CAN.axf" - 0 Error(s), 55 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F1xx_DFP.2.3.0.pack
+                Keil.STM32F1xx_DFP.2.3.0
+                STMicroelectronics STM32F1 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  C:\Users\Hunter\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+Build Time Elapsed:  00:00:01
+</pre>
+</body>
+</html>
